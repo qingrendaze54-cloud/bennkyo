@@ -10,7 +10,7 @@
     
   <body>
   <div class="app">
-  <h1>英単語勉強アプリ（強化版）</h1>
+  <h1>英単語勉強アプリ（スマホ対応）</h1>
 
   <div class="status">
     正解：<span id="correctCount">0</span> /
@@ -20,22 +20,28 @@
   <div class="question-box">
     <p>意味：<span id="meaning"></span></p>
     <input id="answer" placeholder="英単語を入力">
-    <button id="checkBtn">判定</button>
     <p id="judge"></p>
+    <div class="buttons">
+      <button id="checkBtn">判定</button>
+      <button id="nextBtn">次へ</button>
+    </div>
   </div>
 
   <div class="buttons">
     <button id="knownBtn">覚えた</button>
     <button id="reviewBtn">復習</button>
-    <button id="nextBtn">次へ</button>
+    <button id="shuffleBtn">単語シャッフル</button>
+    <button id="fillBtn">穴埋め問題</button>
   </div>
 
   <hr>
 
-  <h2>単語追加</h2>
+  <h2>単語追加 / 編集</h2>
   <input id="newEn" placeholder="英単語">
   <input id="newJp" placeholder="意味">
   <button id="addBtn">追加</button>
+
+  <ul id="wordList"></ul>
 
   <hr>
 
